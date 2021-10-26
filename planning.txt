@@ -1,0 +1,26 @@
+users
+columns: id -> primary key, autoincrement
+    email -> unique
+    name -> varchar
+    type: enum
+    created_at -> timestamp
+
+emails:
+columns: id -> primary key, autoincrement
+    sender: int
+    receiver: int
+    body: text
+    stop_gap: int
+    is_sent: tinyint
+    created_at: timestamp
+
+threads:
+columns: id -> primary key, autoincrement
+    sender_email_id:
+    receiver_email_id:
+    subject: varchar
+    num_of_followups: int
+    to_close_thread: tinyint
+    created_at: timestamp
+
+    
