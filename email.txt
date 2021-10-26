@@ -1,0 +1,33 @@
+
+sender -> 1
+receiver -> 10
+body -> hi so and so
+
+emails:
+id 1
+sender -> 1
+receiver -> 10
+bosy ->
+schedule_date
+created_at
+
+id 2
+sender -> 1
+receiver -> 10
+bosy ->
+schedule_date
+created_at
+
+threads:
+    sender_email_id: 1
+    receiver_email_id:10
+    subject: ....
+    //num_of_followups: 2
+    to_close_thread: 0
+    created_at: timestamp
+    
+cron ->
+
+    1. pick up threads with to_close_thread = 0
+    2. pick up all emails from threads from step 1 and join with emails.
+    3. schedule_date
